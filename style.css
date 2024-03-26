@@ -75,3 +75,9 @@ section {
 li:hover {
     background-color: rgb(234, 234, 234);
 }
+@media screen and (max-width: 1172px) {
+    li {
+        background-color: aqua;
+    }
+    
+}
