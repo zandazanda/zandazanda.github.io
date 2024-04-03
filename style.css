@@ -1,73 +1,132 @@
-ul {
-    list-style-type: none;
-    display: flex;
-    margin-top: 50px;
-    background-color: aqua;
-    padding: 0;
-    text-align: center;
-    
-    align-items: center;
-}
-
-
-header {
-    display: flex;
-}
-
-li  {
-    
-    text-align: center;
-    
-
-}
-
-h1 {
-    margin-left: 100px;
-}
-
-#selection {
-    background-color: gray;
-    padding: 20px 30px 20px 0;
-    width: 100px;
-    display: none;
-    position: absolute;
-    
-    
-}
-
-section {
-    display: block;
-    margin-left: 30px;
-    
-}
-#lima {
-    margin-top: 12px;
-    margin-bottom:12px;
-}
-
-#dropdown:hover #selection {
-display: block;
-position: fixed;
-
-}
-
 body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#dropdown {
-    cursor: pointer;
-    position: relative;
+header {
+    display: flex;
+    align-items: baseline;
     
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-#selection {
-    transition: 0.3s;
+h1 {
+    font-weight: normal;
+    margin-left: 130px;
+    font-size: 25px;
+    white-space: nowrap;
+
 }
 
-#hey {
-    background-color: aquamarine;
-    display: block
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: 260px;
+    font-size: 20px;
 }
+
+
+
+
+li {
+    margin-left: 50px;
+    margin-right: 70px;
+  
+}
+
+#Home {
+    transition: transform 0.3s;
+}
+
+#Services {
+    transition: transform 0.3s;
+}
+
+#Portfolio {
+    transition: transform 0.3s;
+}
+
+#Contact {
+    transition: transform 0.3s;
+}
+
+#Home:hover {
+    transform: scale(1.2);
+}
+#Services:hover {
+    transform: scale(1.2);
+}
+#Portfolio:hover {
+    transform: scale(1.2);
+}
+#Contact:hover {
+    transform: scale(1.2);
+}
+
+header {
+    margin-top: 3px;
+}
+
+#whiteline {
+    background-color: white;
+    height: 2px;
+    width: 550px;
+    flex-grow: 2;
+    
+}
+
+#menu-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+  }
+  
+  .line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+  }
+  
+  .line-1 {
+    top: 0;
+    transition: transform 0.3s;
+  }
+  
+  .line-2 {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+  
+  .line-3 {
+    bottom: 0;
+    transition: transform 0.3s;
+  }
+  
+  .menu-open .line-1 {
+    transform: translateY(50%) rotate(45deg);
+    top: 13px;
+  
+
+  }
+  
+  .menu-open .line-2 {
+    opacity: 0;
+  }
+  
+  .menu-open .line-3 {
+    transform: translateY(-50%) rotate(-45deg);
+    bottom: 13px;
+    
+  }
+  
